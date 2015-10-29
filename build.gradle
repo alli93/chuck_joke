@@ -3,6 +3,9 @@ apply plugin: 'application'
 
 mainClassName = "is.arnlaugsson.chuck_joke.ChuckWeb"
 
+task stage {
+    dependsOn installDist
+}
 repositories {
     jcenter()
 }
